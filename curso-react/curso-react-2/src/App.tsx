@@ -1,5 +1,8 @@
 //import { useState } from 'react'
 import logo from './assets/react.svg' 
+import Footer from './components/Footer'
+import Header from './components/Header'
+import './output.css'
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -10,10 +13,10 @@ function App() {
 
   return (
     <>
-      <h1>Olá mundo</h1>
-      <p>Olá, {name}</p>
+      <Header/>
       <p>Oi, {upperName}</p>
-      <img src={logo} alt="Minha imagem" />      
+      <img src={logo} alt="Minha imagem" />
+      <Footer/>
     </>
   )
 }
